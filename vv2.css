@@ -52,6 +52,9 @@ img {
     color: #b08a77;
 
 }
+.col-md-8 {
+    background-color: #efc4d8;
+}
 .header_active {
     background: #b75940bd;
     /* #293B5F */
