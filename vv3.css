@@ -35,7 +35,7 @@ img {
     /* color: #f9f4f4; */
 }
 .navigation a:hover {
-    color: #ab6464;
+    color: #ffc486;
     transform: scale(1.05);
 }
 .header {
@@ -49,14 +49,14 @@ img {
     color: #f9f4f4;
 }
 .header a {
-    color: #533a2e;
+    color: #c2ffa6;
 }
 .header_active {
     background: #b75940bd;
     /* #293B5F */
 }
 .header_active a {
-    color: #533a2e;
+    color: #c2ffa6;
 }
 
 .logo-wrap img {
@@ -90,6 +90,8 @@ img {
     font-size: 40px;
     text-align: center;
     margin: 0;
+    height: 400px;
+    
 }
 .slide3 {
     width: 100%;
@@ -226,4 +228,11 @@ footer {
     text-decoration: underline;
     padding-top: 4px;
     font-weight: 700;
+}
+.box {
+    border-radius: 20px 0px 20px 0px;
+    background-color: red;
+    margin: 00px;
+    width: 350px;
+    height: 150px;
 }

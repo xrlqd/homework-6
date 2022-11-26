@@ -6,11 +6,35 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 	<title>Custom PS Controllers</title>
 	<link rel="stylesheet" href="vv3.css">
     <link rel="shortcut icon" href="1280px-PlayStation_logo.svg.png" type="image/png">
+    <script>
+$( document ).ready(function() {
+if (!$.cookie('good')) {
+$("#okno").modal('show'); //метод Bootstrap
+}
+});
+</script>
 </head>
 <body>
+    <div id="okno" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title">Всплывающее окно</h4>
+</div>
+<div class="modal-body">
+<p>Здесь может быть ваша реклама :D<p>
+</div>
+</div>
+</div>
+</div>
 	<header class="header">
         <div class="wrap flex">
             <div class="logo-wrap">
@@ -19,7 +43,7 @@
             <ul class="navigation">
                 <li><a href="index.html">Casual controllers</a></li>
                 <li><a href="2.html">Custom controllers</a></li>
-                <li><a href="3.html">About us</a></li>
+                <li><a href="3.html">Our game club</a></li>
             </ul>
         </div>
     </header>
@@ -30,26 +54,23 @@
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
-  <div class="carousel-inner" style="height: 100vh">
+  <div class="carousel-inner" style="height: 100vh;">
     <div class="carousel-item active" style="height: 100vh">
-      <img src="https://wallpapercrafter.com/sizes/3840x2160/77714-forest-illustration-artist-artwork-digital-art-hd-4k-dribbble-minimalism-minimalist.jpg" class="d-block w-100" alt="...">
+      <img src="https://abrakadabra.fun/uploads/posts/2022-02/thumbs/1645599998_12-abrakadabra-fun-p-interer-kompyuternogo-kluba-19.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+        <h5>Мощные компъютеры, удобная гарнитура, и мониторы 4к</h5>
       </div>
     </div>
-    <div class="carousel-item" style="height: 100vh">
-      <img src="https://wallpapercrafter.com/sizes/3840x2160/77714-forest-illustration-artist-artwork-digital-art-hd-4k-dribbble-minimalism-minimalist.jpg" class="d-block w-100" alt="...">
+    <div class="carousel-item" style="height: 100vh;">
+      <img src="https://abrakadabra.fun/uploads/posts/2022-02/thumbs/1645600015_17-abrakadabra-fun-p-interer-kompyuternogo-kluba-30.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+        <h5>Отзывчивый персонал и не дорогие цены</h5>
       </div>
     </div>
-    <div class="carousel-item" style="height: 100vh">
-      <img src="https://wallpapercrafter.com/sizes/3840x2160/77714-forest-illustration-artist-artwork-digital-art-hd-4k-dribbble-minimalism-minimalist.jpg" class="d-block w-100" alt="...">
+    <div class="carousel-item" style="height: 100vh;">
+      <img src="https://blog.pokupon.ua/wp-content/uploads/2020/12/igrovoj-klub-play-zone-1024x768.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
+        <h5>Большое разнообразие конcолей и игр для них</h5>
       </div>
     </div>
   </div>
@@ -64,17 +85,23 @@
 </div>
 <!-- 2 слайд -->
 <div class="slide2">
-    <div class="qoute" style="background-color: lemonchiffon">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Dolores, iusto non possimus sit laboriosam illo neque quas molestias? <br>Facere aliquam temporibus non, dolor optio voluptate autem perferendis error ipsum commodi.
+    <div class="qoute" style="height: 200px; background-color: lemonchiffon; display: flex;
+    align-items: center;
+    justify-content: space-around;">
+        <center><div class="box">
+            Вы можете посетить нас по координатам 
+            <br><br><br>
+            <a target="_blank" href="https://www.google.com.ua/maps/place/%D0%9E%D0%B3%D0%B0%D0%B9%D0%BE,+%D0%A1%D0%A8%D0%90/@40.341724,-84.9125117,7z/data=!3m1!4b1!4m5!3m4!1s0x8836e97ab54d8ec1:0xe5cd64399c9fd916!8m2!3d40.2999524!4d-82.7998352?hl=ru" style="text-decoration: underline;">40.351197629499616, -82.86484997839723</a>
+        </div></center>
     </div>
-    <img src="https://wallpapercrafter.com/sizes/3840x2160/77714-forest-illustration-artist-artwork-digital-art-hd-4k-dribbble-minimalism-minimalist.jpg" alt="">
+    <img src="https://hyperpc.ru/images/project/gaming-club/hyperpc-gaming-club-banner.jpg" alt="">
 </div>
 <!-- 3 слайд -->
 <div class="slide3-wrap">
     <div class="slide3">
         <div class="containerM">
             <div class="slide3-photo">
-                <img src="https://wallpapercrafter.com/sizes/3840x2160/77714-forest-illustration-artist-artwork-digital-art-hd-4k-dribbble-minimalism-minimalist.jpg" alt="">
+                <img src="https://abrakadabra.fun/uploads/posts/2022-02/thumbs/1645599987_11-abrakadabra-fun-p-interer-kompyuternogo-kluba-18.jpg" alt="">
             </div>
             <div class="slide3-content flex">
                 <h2>
@@ -98,18 +125,10 @@
 <!-- 4 слайд -->
 <div class="slide4-wrap">
     <div class="slide4">
-        <div class="slide4-content">
-            <h2>
-                lorem
-            </h2>
-            <h5>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque cum magnam, omnis laudantium perspiciatis voluptatibus architecto earum culpa obcaecati quia illum nostrum sed vitae, labore est id, porro cumque! Consectetur.
-            </h5>
-        </div>
-        <div style="margin-top: 200px;">
+        <div>
             <img src="https://wallpapercrafter.com/sizes/3840x2160/77714-forest-illustration-artist-artwork-digital-art-hd-4k-dribbble-minimalism-minimalist.jpg" alt="">
         </div>
-        <div class="hText"><h2>header here will be</h2></div>
+        <div class="hText" style="margin-top: -200px;"><h2>header here will be</h2></div>
         <div class="wrapEmotions flexEmotions">
             <div class="emCol">
                 <h2>Радість</h2>
@@ -214,7 +233,7 @@
         </div>
     </div>
 </div>
-    <footer class="py-3">
+    <footer class="py-3" style="margin-top: -;">
       <div class="copy-bottom-txt text-center py-3">
         <div class="infoF">
             <p><center>
